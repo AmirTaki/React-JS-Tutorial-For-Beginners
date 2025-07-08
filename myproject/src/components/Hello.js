@@ -1,10 +1,14 @@
-// function Hello () {
-//     return <h1>Hello World</h1>
-// }
+const name = "amir";
 
+const displayMessage = () => {
+    return 'I need help!'
+}
 const Hello = () => {
     return (
-        <h1>Hello world!</h1>
+        <>
+            <h1>Hello world! {name}</h1>
+            <h2>{displayMessage()}</h2>
+        </>
     )
 }
 
