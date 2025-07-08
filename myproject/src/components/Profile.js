@@ -1,7 +1,7 @@
 
 
 const Profile  = (props) => {
-    console.log(props)
+    // props.name = "mani"  warning : Immutability Of Props
     return (
         <>
             {props.children}

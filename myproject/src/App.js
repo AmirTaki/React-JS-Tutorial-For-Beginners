@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Message from './components/Messagge';
-
+import Profile from './components/Profile';
 
 
 
@@ -9,8 +9,7 @@ import Message from './components/Messagge';
 function App() {
   return (
     <div className="App">
-      <Message messagecontent = "This is a message from props" messageCode = '1234'/> 
-    
+     <Profile name = "amir" lastname = "taki" />
     </div>
   );
 }
