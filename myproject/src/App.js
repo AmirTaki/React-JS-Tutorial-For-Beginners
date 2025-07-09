@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import FunctionalCounter from './components/FunctionalCounter';
+import ConditinalComponent from './components/ConditinalComponent';
 
 
 function App() {
   return (
     <div className="App">
-      <FunctionalCounter />
+      <ConditinalComponent />
     </div>
   );
 }
