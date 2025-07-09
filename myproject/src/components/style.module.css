@@ -9,3 +9,29 @@ body {
     color:#fff;
     padding: 20px
 }
+
+.todoform {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.todoinput{
+    width : 100%;
+    border:none;
+    border-bottom:  1px solid whitesmoke;
+    text-align: center;
+    height: 50px;
+    font-size: 1.5em;
+}
+
+.todobutton{
+    width : 100%;
+    border: none;
+    height: 50px;
+    background-color :tomato;
+    font-family: 1.2em;
+    color:white;
+    margin-top: 20px ;
+
+}
