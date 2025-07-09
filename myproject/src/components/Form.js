@@ -8,18 +8,24 @@ class Form extends Component {
     }
     handleChange = (event) => {
         this.setState({firstname : event.target.value})
-        console.log(this.state.firstname)
     };
 
     handleChangeLastName = (event) => {
         this.setState({lastname : event.target.value})
-        console.log(this.state.lastname)
     }
+    handleSubmit = (event) => {
+        event.preventDefault()
+        console.log({
+            fName : this.state.firstname,
+            lName : this.state.lastname
+        })
+    }
+
     
     render(){
         return(
             <div>Form
-                <form>
+                <form onSubmit={this.handleSubmit}>
                     <label>firstName : </label>
                     <input 
                         type = "text" 
@@ -33,6 +39,7 @@ class Form extends Component {
                         onChange={this.handleChangeLastName}
                     >
                     </input>
+                    <button type = "submit">Submit</button>
                 </form>
             </div>
         )
