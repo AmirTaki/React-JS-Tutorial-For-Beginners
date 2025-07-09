@@ -10,7 +10,12 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Form todo = {todo}  setTodo = {setTodo} todoList = {todoList} setTodoList = {setTodoList}/>
+      <Form 
+        todo = {todo}  
+        setTodo = {setTodo} 
+        todoList = {todoList} 
+        setTodoList = {setTodoList}
+      />
     </div>
   );
 }
