@@ -1,6 +1,11 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
 .header {
-    color: blue;
-    text-align: center;
-    font-size: 50px;
-
+    background-color: royalblue;
+    height: 50px;
+    font-size: 2em;
+    color:#fff;
+    padding: 20px
 }
