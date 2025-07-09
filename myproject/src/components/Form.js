@@ -7,6 +7,7 @@ const Form = ({todo, setTodo, todoList, setTodoList}) => {
     const handleSubmit = (e)=>{
         e.preventDefault();
         setTodoList([...todoList, todo])
+        setTodo('')
     }
     return(
         <div className={style.todoform}>
