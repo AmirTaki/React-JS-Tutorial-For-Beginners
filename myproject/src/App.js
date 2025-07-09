@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import StylesheetComponent from './components/StylesheetComponent';
+import ModuleComponent from './components/ModuleComponent';
 
 
 function App() {
   return (
     <div className="App">
-      <StylesheetComponent />
 
+      <ModuleComponent />
     </div>
   );
 }
