@@ -1,12 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import ConditinalComponent from './components/ConditinalComponent';
-
+import Product from './components/Product';
 
 function App() {
   return (
     <div className="App">
-      <ConditinalComponent />
+      <Product />
     </div>
   );
 }
