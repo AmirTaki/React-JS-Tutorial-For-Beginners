@@ -2,16 +2,27 @@ import { useState } from "react"
 
 const Todo = () => {
     const [todo, setTodo] = useState();
+    const [todoList, setTodoList] =  useState([])
     const handleChange = (e)=> {
         setTodo(e.target.value)
-        console.log(todo)
     }
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        let tempList = todoList
+        tempList.push(todo)
+        setTodoList(tempList)   
+        console.log(todoList)
+        setTodo('')
+    }
+    
     return (
         <>
-        <form>
+        <form onSubmit={handleSubmit}>
             <input type = "text" value = {todo} onChange={handleChange}></input>
             <button type = "submit">Add</button>
         </form>
+
+        {todoList}
         
         </>
     )
