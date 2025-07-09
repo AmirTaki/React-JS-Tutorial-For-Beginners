@@ -5,25 +5,35 @@ class Counter extends Component {
         super();
         this.state = {
             counter : 0, 
-
         }
+        this.increment = this.increment.bind(this)
     }
-    increment () {
-        //  this.state.counter = 1
+    increment() {
+        console.log(this)
         this.setState({
             counter : this.state.counter + 1
         })
     }
-    decrement() {
+     
+    
+    
+    decrement = () => {
         this.setState({
             counter : this.state.counter - 1
+        })
+    }
+
+    handlingEventBind () {
+        this.setState({
+            counter : 0
         })
     }
     render(){
         return(<>
             <h3>Count value is : {this.state.counter} </h3>
-            <button onClick={()=>this.increment()}>increment</button>
-            <button onClick={()=>this.decrement()}>decrement</button>
+            <button onClick={this.increment}>increment</button>
+            <button onClick={this.decrement}>decrement</button>
+            <button onClick={()=>{this.handlingEventBind()}}>bind event handling</button>
         </>)
     } 
 }
