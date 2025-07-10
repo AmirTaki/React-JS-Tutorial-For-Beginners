@@ -4,7 +4,7 @@ const TodoList = ({todoList, setTodoList}) => {
     return (
         <>
             {todoList.map((todoItem, index) => (
-             <Todo key = {index} todoItem = {todoItem} />
+             <Todo key = {todoItem.id} todoItem = {todoItem} />
             ))}
         </>
     )
