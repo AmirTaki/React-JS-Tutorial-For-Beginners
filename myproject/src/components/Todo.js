@@ -4,7 +4,7 @@ const Todo = ({todoItem}) => {
     return (
         <>
             <div className={style.todoItem}>
-                <h3 className={style.todoname}>{todoItem}</h3>
+                <h3 className={style.todoname}>{todoItem.name}</h3>
                 <button className={style.deletebutton}>Done</button>
             </div>
         </>
