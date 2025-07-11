@@ -1,6 +1,8 @@
 // import logo from './logo.svg';
 
-import Table from "./components/Table";
+import Parent from "./components/Parent";
+
+
 
 // import './App.css';
 
@@ -9,7 +11,7 @@ function App() {
 
   return (
     <div className="App">
-      <Table />
+      <Parent />
     </div>
   );
 }
