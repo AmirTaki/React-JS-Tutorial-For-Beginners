@@ -1,3 +1,6 @@
+import React from "react";
+
+
 const Child = ({count}) => {
     console.log("Child Component is being rendered")
     return (
@@ -7,4 +10,4 @@ const Child = ({count}) => {
         </>
     )
 }
-export default Child ;
+export default React.memo(Child) ;
