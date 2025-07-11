@@ -1,13 +1,15 @@
 // import logo from './logo.svg';
+
+import Table from "./components/Table";
+
 // import './App.css';
-import FragmentComponent from './components/FragmentComponent';
 
 
 function App() {
 
   return (
     <div className="App">
-      <FragmentComponent />
+      <Table />
     </div>
   );
 }
